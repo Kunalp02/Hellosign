@@ -16,7 +16,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-CSRF_TRUSTED_ORIGINS = ['https://adfd-2401-4900-5604-ff30-dd85-858b-62f8-da10.in.ngrok.io','http://127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://adfd-2401-4900-5604-ff30-dd85-858b-62f8-da10.in.ngrok.io','http://127.0.0.1', 'https://ancient-sands-93478.herokuapp.com']
 
 
 
@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-pd$3&9i$hxz9+ks6@d%n(5m0*j3+)6+r)bogbu&_#xdb3u%lq1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'adfd-2401-4900-5604-ff30-dd85-858b-62f8-da10.in.ngrok.io', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'adfd-2401-4900-5604-ff30-dd85-858b-62f8-da10.in.ngrok.io', 'localhost', 'ancient-sands-93478.herokuapp.com']
 
 
 # Application definition
