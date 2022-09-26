@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-center mt-5" id="container">
+    <form class="d-inline-block" action="{% url 'send_file' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-3">
+            <h3 class="float-start">Select Files</h3><input class="form-control" type="file" name="document">
+        </div>
+
+        <div class="mb-3">
+            <h5 class="float-start">Document Title</h5><input class="form-control" type="text" name="doc_title">
+        </div>
+
+        <div class="mb-3">
+            <h5 class="float-start">Signer Email</h5>
+            <input class="form-control mb-3" type="email" name="signer_email" placeholder="Signer Email 1">
+        </div>
+        <button class="btn btn-primary float-end" type="submit">Submit</button>
+    </form> 
+    
+</div>
+
+
+<script>
+    var button = Dropbox.createChooseButton(options);
+    document.getElementById("container").appendChild(button);
+</script>
+
+{% endblock content %}
+
+

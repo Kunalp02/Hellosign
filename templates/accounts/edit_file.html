@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<iframe id="gfgFrame" src="" 
+style="height: 50vh; width: 600px;">
+</iframe>
+
+<p>Click to visit GeeksForGeeks website</p>
+
+<button onclick="navigate()">
+Click it
+</button>
+
+<script>
+function navigate() {
+    document.getElementById("gfgFrame").src
+        = {{sign_url}};
+}
+</script>
+{% endblock content %}
+
+
+
+
+
